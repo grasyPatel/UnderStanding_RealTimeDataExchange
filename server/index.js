@@ -1,6 +1,7 @@
 import express from 'express';
 import cors from 'cors';
-import RealTime from './routes/RealTime.js';
+import HttpChat from './routes/HttpChat.js';
+import PollingChat from './routes/PollingChat.js';
 
 
 const app = express();
@@ -11,7 +12,9 @@ app.use(cors(
   credentials: true,
 }
 ));
-app.use("/api/chathttp",RealTime)
+app.use("/api/chathttp", HttpChat);
+
+app.use("/api/chatpolling", PollingChat); 
 
 
 app.listen(8080, () => {

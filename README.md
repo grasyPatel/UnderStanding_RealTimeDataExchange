@@ -76,6 +76,11 @@ npm run dev
 
 (Default: runs on [http://localhost:5173](http://localhost:5173))
 
+### routes
+1. Http ChatApp: http://localhost:5173/chathttp
+2. Polling chatApp: http://localhost:5173/chatpolling
+3. Socket.io chatApp: http://localhost:5173/chatsocket 
+
 ---
 
 ## 🧩 Learning Steps
